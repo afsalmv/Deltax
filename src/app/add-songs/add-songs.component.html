@@ -1,0 +1,85 @@
+<body>
+    <div class="header-wrapper">
+        <div class="container-fluid">
+            <div class="col-lg-6 col-7">
+                <h4 (click)=gotohome()>HOME</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container admin-container">
+        <h4><font>Add a new song </font></h4>
+
+<div class="forms">
+<label >Song Name</label>
+<input class="finput" type="text" name="first_name">
+</div>
+    <div class="forms">
+    <label >Date Released</label>
+    <input class="finput" type="date">
+    </div>
+    <div class="forms">
+    <label >Art Work</label>
+    <input class="finput" type="file">
+    </div>
+    <div class="forms">
+        <label >Artists</label>
+    <select class="finput">
+        <option  value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+
+    </select>
+    <button class="fa fa-plus" style="margin-left:30px ;" data-toggle="modal" data-toggle="modal" data-target="#newartist">Add Artist</button>
+    </div>
+
+        <div class="forms">
+        <button class="input">Back</button>
+        <button class="finput" style="background-color: #aeaeae;">Save</button>
+        </div>
+
+        <!-- artist add starts -->
+        <div class="modal fade" id="newartist" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content filter-modal">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Add Artist</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                
+                <div class="modal-body copy-card">
+                    <div class="forms">
+                        <label >Artist Name</label>
+                        <input class="finput" type="text" name="first_name">
+                        </div>
+
+                        <div class="forms">
+                            <label >Date of Birth</label>
+                            <input class="finput" type="date">
+                            </div>
+                            <div class="forms">
+                                <label >Bio</label>
+                                <input class="finput" type="textarea" name="first_name">
+                                </div>
+                
+                <div class="row justify-content-center">
+                
+                    <div class="forms">
+                        <button class="input" data-dismiss="modal" aria-label="Close">CANCEL</button>
+                        <button class="finput" style="background-color: #aeaeae;">DONE</button>
+                        </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <!-- artist end  -->
+      
+
+    </div>
+</body>

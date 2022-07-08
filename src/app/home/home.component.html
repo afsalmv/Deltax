@@ -1,1 +1,68 @@
-<p>home works!</p>
+<body>
+    <div class="header-wrapper">
+        <div class="container-fluid">
+            <div class="col-lg-6 col-7">
+                <h4>HOME</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container admin-container">
+        <h4>
+            <font>Top 10 Songs </font> <button (click)=AddNewSongs()>Add New Song</button>
+        </h4>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Artwork</th>
+                <th>Song</th>
+                <th>Creation Date</th>
+                <th>Date Of Release</th>
+                <th>Artists</th>
+                <th>Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><font>vikas-silver</font></td>
+                <td><font>9925106924</font></td>
+                <td><font>09-10-2020 (2 months ago)</font></td>
+                <td><font>6282181685</font></td>
+                <td><font>Not Done</font></td>
+                <td>
+                    <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        <!-- artists section starts -->
+        <h4><font>Top 10 Artists </font></h4>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Artists</th>
+                        <th>Date Of Birth</th>
+                        <th>Songs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><font>vikas-silver</font></td>
+                        <td><font>9925106924</font></td>
+                        <td><font>09-10-2020 (2 months ago)</font></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- artists section end -->
+
+
+    </div>
+</body>
